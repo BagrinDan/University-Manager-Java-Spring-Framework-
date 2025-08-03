@@ -1,0 +1,32 @@
+/* ===== MAIN CONTENT ===== */
+main.main-menu {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-menu h2 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.action-button:hover {
+    background-color: #43a047;
+}

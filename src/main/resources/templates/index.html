@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Университет</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" th:href="@{/header/header.css}">
+    <link rel="stylesheet" th:href="@{/main/main.css}">
+
+</head>
+<body>
+<header>
+    <div class="header-left">Университет</div>
+    <div class="header-right">
+        <a th:href="@{/login}" class="login-button">Вход</a>
+    </div>
+</header>
+
+<main class="main-menu">
+    <h2>Управление студентами</h2>
+    <div class="actions">
+        <a href="/students/add" class="action-button">Добавить студента</a>
+        <a href="/students/search" class="action-button">Поиск студента</a>
+        <a href="/students/delete" class="action-button">Удалить студента</a>
+        <a href="/students/edit" class="action-button">Изменить данные</a>
+    </div>
+</main>
+</body>
+</html>

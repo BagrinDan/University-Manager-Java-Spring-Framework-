@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход - Университет</title>
+    <link rel="stylesheet" th:href="@{/login/auth.css}">
+</head>
+<body>
+<div class="form-container">
+    <h2>Вход в систему</h2>
+    <form th:action="@{/login}" method="post">
+        <input type="text" name="username" placeholder="Имя пользователя" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+    </form>
+    <p>Нет аккаунта? <a th:href="@{/register}">Зарегистрироваться</a></p>
+</div>
+</body>
+</html>
